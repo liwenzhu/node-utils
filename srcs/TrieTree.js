@@ -1,6 +1,18 @@
 'use strict';
 
-function TrieTree() {
+function TrieTree(key, bound) {
+
+};
+
+/**
+ * @param {Charactor} key a charactor of a word.
+ * @param {Boolean} bound if the node is the end of a word.
+ */
+function TrieTreeNode(key, bound) {
+    var node = this.node = {};
+    node.key = key;
+    node.bound = bound;
+
 };
 
 /**
